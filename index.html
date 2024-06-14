@@ -9,42 +9,43 @@
   <body>
     <div class="container">
       <h1>Konversi Suhu</h1>
-      <label for="celsius"
-        >Masukkan suhu derajat Celsius (°C) ke kotak dibawah, lalu klik tombol
-        Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit
-        (°F).</label>
-      <input type="number" id="celsius" placeholder="Celsius (°C)" />
+      <p>
+        Masukkan suhu derajat Celsius (&deg;C) ke kotak dibawah, lalu klik tombol
+        Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (&deg;F).
+      </p>
+      <h3>Celcius (&deg;C):</h3>
+      <input type="number" id="celsius" placeholder="Celsius (&deg;C)" />
       <button onclick="convertToFahrenheit()">Konversi</button>
       <button onclick="reset()">Reset</button>
       <button onclick="reverse()">Reverse</button>
 
-      <label for="fahrenheit">Fahrenheit (°F):</label>
+      <h3>Fahrenheit (&deg;F):</h3>
       <input
         type="number"
         id="fahrenheit"
-        placeholder="Fahrenheit (°F)"
+        placeholder="Fahrenheit (&deg;F)"
         readonly
       />
-
+      <h3>Cara Kalkulasi:</h3>
       <div id="calculation"></div>
 
       <p id="reverse-link">
         <a href="#" onclick="showReverseCalculation()">Fahrenheit ke Celsius</a>
       </p>
 
-      <h2>Cara Konversi Dari Celsius (°C) ke Fahrenheit (°F)</h2>
+      <h2>Cara Konversi Dari Celsius (&deg;C) ke Fahrenheit (&deg;F)</h2>
       <p>
-        Suhu <i>S</i> dalam derajat Fahrenheit (°F) sama dengan suhu
-        <i>S</i> dalam derajat Celsius (°C) kali <sup>9</sup>/<sub>5</sub>
+        Suhu <i>S</i> dalam derajat Fahrenheit (&deg;F) sama dengan suhu
+        <i>S</i> dalam derajat Celsius (&deg;C) kali <sup>9</sup>/<sub>5</sub>
         tambah 32.
       </p>
       <p>
-        <i>S</i><sub>(°F)</sub> = (<i>S</i><sub>(°C)</sub> ×
+        <i>S</i><sub>(&deg;F)</sub> = (<i>S</i><sub>(&deg;C)</sub> ×
         <sup>9</sup>/<sub>5</sub>) + 32
       </p>
       <p>atau</p>
-      <p><i>S</i><sub>(°F)</sub> = (<i>S</i><sub>(°C)</sub> × 1.8) + 32</p>
+      <p><i>S</i><sub>(&deg;F)</sub> = (<i>S</i><sub>(&deg;C)</sub> × 1.8) + 32</p>
     </div>
-    <script src="script.js"></script>
+    <script src="JS/script.js"></script>
   </body>
 </html>
